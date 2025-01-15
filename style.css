@@ -1,0 +1,111 @@
+body{
+padding: 0px;
+background: darkblue;
+flex-wrap: wrap;
+display: flex;
+align-items: center;
+justify-content: center;
+}
+.box{
+flex-wrap: wrap;
+display: flex;
+align-items: center;
+justify-content: center;
+height: 100%;
+width: 100%;
+}
+.light{
+width: 300px;
+height: 50px;
+background: linear-gradient(to top,#f9f9f9,
+#d9d9d9);
+border-radius: 50px;
+margin: 50px;
+
+}
+.rod .light{
+transform: rotate(-21deg);
+}
+.straight{
+    position: relative;
+    top: -550px;
+    z-index: 1;
+}
+.tube{
+width: 70px;
+height: 650px;
+background: linear-gradient(to left,#f9f9f9,
+#d9d9d9);
+border-radius: 70px;
+position: absolute;
+left: 45%;
+top: -40px;
+}
+.bulb{
+    margin: 50px;
+    transition: 2s;
+    transform: rotate(90deg);
+position: absolute;
+left: 30%;
+height: 950px;
+padding: 0;
+border-radius: 0px 0px 500px 500px;
+
+}
+
+.part{
+    width: 0px;
+    height: 0px;
+border: 150px solid #dde3e7;
+border-top: 150px solid transparent;
+border-left: 150px solid transparent;
+border-radius: 100%;
+transform: rotate(45deg);
+position: relative;
+top: -870px;
+left: 55px;
+}
+.top{
+    width: 300px;
+    height: 100px;
+    background: #dde3e7;
+    position: relative;
+top: -570px;
+left: 55px;
+}
+.bulb:hover .light{
+    background: white;
+    box-shadow: 0px 0px 10px #fff,
+    0px 0px 20px #fff,
+    0px 0px 30px #fff,
+    0px 0px 40px #fff,
+    0px 0px 50px #fff,
+    0px 0px 60px #fff,
+    0px 0px 70px #fff,
+    0px 0px 80px #fff,
+    0px 0px 90px #fff,
+    0px 0px 100px #fff;
+}
+.bulb:hover .tube{
+    background: white;
+    box-shadow: 0px 0px 10px #fff,
+    0px 0px 20px #fff,
+    0px 0px 30px #fff,
+    0px 0px 40px #fff,
+    0px 0px 50px #fff,
+    0px 0px 60px #fff,
+    0px 0px 70px #fff,
+    0px 0px 80px #fff,
+    0px 0px 90px #fff,
+    0px 0px 100px #fff;
+}
+.hold{
+    width: 100px;
+    height: 130px;
+    background: linear-gradient(to left,red,silver);
+    position: relative;
+    top: -450px;
+    left: 160px;
+    border-radius: 0 0 20px 20px;
+    z-index: 1;
+}
